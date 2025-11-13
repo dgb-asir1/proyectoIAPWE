@@ -176,3 +176,8 @@ button:hover, #mainText h2:hover {
 details summary {
   list-style: none;
 }
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}

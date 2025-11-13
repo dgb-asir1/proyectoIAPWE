@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 <!DOCTYPE html>
 <html>
     <head>
-        <title>LABUBAI</title>
+        <title>Sidra-Cola</title>
          <link rel="stylesheet" href="css/allStyles.css"> 
     </head>
     <body>
@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
             <img></img>
         </section>        
         <section id="mainText">
-            <h2>BIENVENIDO</h2>
+            <h2>Bienvenido</h2>
             <form action="index.php" method="post">
                 <label for="loginPass">Introduce la contraseña</label>
                 <br><br>         

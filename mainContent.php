@@ -27,7 +27,7 @@ $spanishTexts = [
             <button id="langBtnFr"><img src="./img/flag_France.png"></img></button>
         </div>
         <div id="logoutBtn">
-            <button id="">SALIR</button>
+            <button id=""><a href="index.php">SALIR</a></button>
         </div>
     </nav>
     <nav>
