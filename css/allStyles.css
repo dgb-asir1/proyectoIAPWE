@@ -46,10 +46,13 @@ button:hover {
 }
 
 #languageBtns {
-    max-width: 13em;
+    width: 20em;
+    display: flex;
+    justify-content: center;
+    gap: 0.7em;
 }
 
-#languageBtns > button {
+#languageBtns button {
     justify-content: center; 
     align-items: center;
     padding: 0;
@@ -57,7 +60,7 @@ button:hover {
     border: 2px solid transparent;
 }
 
-#languageBtns > button:hover {
+#languageBtns button:hover {
     border: 2px solid #6F9384;
 }
 
@@ -171,6 +174,10 @@ button:hover, #mainText h2:hover {
 #mainText h2:hover {
     cursor: pointer;
     background-color: #C1CDC8;
+}
+
+#mainText h2:hover, button {
+    cursor: pointer;
 }
 
 details summary {
