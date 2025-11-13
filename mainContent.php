@@ -34,7 +34,7 @@ $spanishTexts = [
         <div id="logo"><button><img src="./img/logo.png"></img></button></div>
         <div id="mainBtns">
             <button>INICIO</button>
-            <button>CONTACTO</button>
+            <button><a href="cuestionario.php">CUESTIONARIO</a></button>
         </div>
         <div id="themeBtn">
             <button><img src="./img/themeSwitch.png"></img></button>
