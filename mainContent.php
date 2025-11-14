@@ -1,24 +1,11 @@
 <?php
 
+session_start();
 require_once('languages.php');
 
-session_start();
+
 $filename = str_replace('\\', '/', __FILE__);
 echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
-
-if (isset($_GET['lang'])) {
-    $language = $_GET['lang'];
-} else {
-    $language = 'ESP';
-}
-
-if ($language == "ESP") {
-    $texts = $textSpanish;
-} elseif ($language == "ENG") {
-    $texts = $textEnglish;
-} elseif ($language == "FRA") {
-    $texts = $textFrench;
-} 
 
 
 ?>
@@ -54,8 +41,12 @@ if ($language == "ESP") {
     <nav>
         <div id="logo"><button><img src="./img/logo.png"></img></button></div>
         <div id="mainBtns">
-            <button><a href="index.php">INICIO</a></button>
-            <button><a href="cuestionario.php">CUESTIONARIO</a></button>
+            <button><a href="index.php">
+                    <?php echo $text_main['inicio'] ?>
+                </a></button>
+            <button><a href="cuestionario.php">
+                    <?php echo $text_main['cuestionario'] ?>
+                </a></button>
         </div>
         <div id="themeBtn">
             <button><img src="./img/themeSwitch.png"></img></button>
@@ -67,21 +58,21 @@ if ($language == "ESP") {
     <section id="mainText">
         <details>
             <summary>
-                <h2><?php echo $texts['nosotros'] ?></h2>
+                <h2><?php echo $text_main['nosotros'] ?></h2>
             </summary>
-            <p>Here is the content!</p>
+            <p><?php echo $text_main['nosotros_contenido'] ?></p>
         </details>
         <details>
             <summary>
-                <h2><?php echo $texts['nuestro_producto'] ?></h2>
+                <h2><?php echo $text_main['nuestro_producto'] ?></h2>
             </summary>
-            <p>Here is the content!</p>
+            <p><?php echo $text_main['nuestro_producto_contenido'] ?></p>
         </details>
         <details>
             <summary>
-                <h2><?php echo $texts['ven_a_vernos'] ?></h2>
+                <h2><?php echo $text_main['ven_a_vernos'] ?></h2>
             </summary>
-            <p>Here is the content!</p>
+            <p><?php echo $text_main['ven_a_vernos_contenido'] ?></p>
         </details>
     </section>
 </body>

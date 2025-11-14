@@ -184,6 +184,11 @@ details summary {
   list-style: none;
 }
 
+details p {
+    display: block;
+    max-width: 30em;
+}
+
 button a {
     text-decoration: none;
     color: inherit;

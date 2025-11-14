@@ -1,33 +1,25 @@
-<?php 
+<?php
 
-$textSpanish = [
-    "inicio" => "Inicio",
-    "info" => "Información",
-    "nosotros" => "Nosotros",
-    "nuestro_producto" => "Nuestro producto",
-    "ven_a_vernos" => "Ven a vernos",
-    "salir" => "Salir",
-    "cuestionario" => "Cuestionario"
-];
+require_once('translations/translations.php');
 
-$textEnglish = [
-    "inicio" => "Home",
-    "info" => "Information",
-    "nosotros" => "About Us",
-    "nuestro_producto" => "Our Product",
-    "ven_a_vernos" => "Come Visit Us",
-    "salir" => "Logout",
-    "cuestionario" => "Quiz"
-];
+if (isset($_GET['lang'])) {
+    $language = $_GET['lang'];
+} else {
+    $language = 'ESP';
+}
 
-$textFrench = [
-    "inicio" => "Accueil",
-    "info" => "Information",
-    "nosotros" => "À propos de nous",
-    "nuestro_producto" => "Notre produit",
-    "ven_a_vernos" => "Venez nous voir",
-    "salir" => "Déconnexion",
-    "cuestionario" => "Questionnaire"
-];
+if ($language == "ESP") {
+    $text_index = $text_index_spanish;
+    $text_main = $text_main_spanish;
+    $text_quiz = $text_quiz_spanish;
+} elseif ($language == "ENG") {
+    $text_index = $text_index_english;
+    $text_main = $text_main_english;
+    $text_quiz = $text_quiz_english;
+} elseif ($language == "FRA") {
+    $text_index = $text_index_french;
+    $text_main = $text_main_french;
+    $text_quiz = $text_quiz_french;
+}
 
 ?>

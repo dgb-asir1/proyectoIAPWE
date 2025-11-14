@@ -50,7 +50,7 @@ if ($_SESSION["remainingAttempts"] <= 0) {
         <img></img>
     </section>
     <section id="mainText">
-        <h2>Bienvenido</h2>
+        <h2>Login</h2>
         <form action="index.php" method="post">
             <label for="loginPass">Introduce la contraseña</label>
             <br><br>
