@@ -1,34 +1,6 @@
 <?php
 
-$textSpanish = [
-    "inicio" => "Inicio",
-    "info" => "Información",
-    "nosotros" => "Nosotros",
-    "nuestro_producto" => "Nuestro producto",
-    "ven_a_vernos" => "Ven a vernos",
-    "salir" => "Salir",
-    "cuestionario" => "Cuestionario"
-];
-
-$textEnglish = [
-    "inicio" => "Home",
-    "info" => "Information",
-    "nosotros" => "About Us",
-    "nuestro_producto" => "Our Product",
-    "ven_a_vernos" => "Come Visit Us",
-    "salir" => "Logout",
-    "cuestionario" => "Quiz"
-];
-
-$textFrench = [
-    "inicio" => "Accueil",
-    "info" => "Information",
-    "nosotros" => "À propos de nous",
-    "nuestro_producto" => "Notre produit",
-    "ven_a_vernos" => "Venez nous voir",
-    "salir" => "Déconnexion",
-    "cuestionario" => "Questionnaire"
-];
+require_once('languages.php');
 
 session_start();
 $filename = str_replace('\\', '/', __FILE__);
@@ -101,13 +73,13 @@ if ($language == "ESP") {
         </details>
         <details>
             <summary>
-                <h2>Nuestro producto</h2>
+                <h2><?php echo $texts['nuestro_producto'] ?></h2>
             </summary>
             <p>Here is the content!</p>
         </details>
         <details>
             <summary>
-                <h2>Ven a vernos</h2>
+                <h2><?php echo $texts['ven_a_vernos'] ?></h2>
             </summary>
             <p>Here is the content!</p>
         </details>
