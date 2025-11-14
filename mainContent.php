@@ -30,6 +30,10 @@ $textFrench = [
     "cuestionario" => "Questionnaire"
 ];
 
+session_start();
+$filename = str_replace('\\', '/', __FILE__);
+echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
+
 if (isset($_GET['lang'])) {
     $language = $_GET['lang'];
 } else {
@@ -78,7 +82,7 @@ if ($language == "ESP") {
     <nav>
         <div id="logo"><button><img src="./img/logo.png"></img></button></div>
         <div id="mainBtns">
-            <button>INICIO</button>
+            <button><a href="index.php">INICIO</a></button>
             <button><a href="cuestionario.php">CUESTIONARIO</a></button>
         </div>
         <div id="themeBtn">

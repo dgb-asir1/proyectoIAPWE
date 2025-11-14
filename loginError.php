@@ -1,4 +1,12 @@
-<?php ?>
+<?php 
+session_start();
+$filename = str_replace('\\', '/', __FILE__);
+echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
+
+$_SESSION['loginAttemptsReset'] = true;
+echo "<script>console.log('Reseteados los intentos de login');</script>";
+
+?>
 
 <!DOCTYPE html>
 <html>
