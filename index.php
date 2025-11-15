@@ -72,7 +72,7 @@ if ($_SESSION["remainingAttempts"] <= 0) {
         <form action="index.php" method="post">
             <input type="text" id="loginPass" name="loginPass" placeholder="Usuario">
             <br><br>
-            <input type="text" id="loginPass" name="loginPass" placeholder="Contraseña">
+            <input type="password" id="loginPass" name="loginPass" placeholder="Contraseña">
             <br><br>
             <button type="submit" value="Submit">Entrar</button>
             <br><br>
