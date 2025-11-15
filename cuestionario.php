@@ -80,7 +80,7 @@ if (!empty($_POST['pregunta10'])) {
 
 <head>
     <title>Sidra-Cola</title>
-    <link rel="stylesheet" href="css/allStyles.css">
+    <link rel="stylesheet" href="css/lightTheme.css">
 </head>
 
 <body>
