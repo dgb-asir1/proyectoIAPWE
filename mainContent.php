@@ -15,6 +15,7 @@ if (isset($_GET['theme'])) {
         $cssFile = "darkTheme.css";
     }
 } else {
+    echo "<script>console.log('Activando tema por defecto');</script>";    
     $cssFile = "lightTheme.css";
 }
 
@@ -63,8 +64,14 @@ if (isset($_GET['theme'])) {
         <div id="themeBtn">
             <form action="" method="get">
                 <input type="hidden" name="theme" value=
-                    <?php $_GET['theme'] == 'LIGHT' ? $themeBtnValue = "DARK" : $themeBtnValue = "LIGHT";
-                    echo $themeBtnValue
+                    <?php 
+                    if(isset($_GET['theme'])){
+                        $_GET['theme'] == 'LIGHT' ? $themeBtnValue = "DARK" : $themeBtnValue = "LIGHT";   
+                    }
+                    else {
+                        $themeBtnValue = "DARK";
+                    }
+                    echo $themeBtnValue;
                     ?>>
                 <button type="submit"><img src="./img/themeSwitch.png"></img></button>
             </form>
