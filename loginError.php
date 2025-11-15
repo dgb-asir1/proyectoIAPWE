@@ -7,11 +7,7 @@ $_SESSION['loginAttemptsReset'] = true;
 echo "<script>console.log('Reseteados los intentos de login');</script>";
 
 require_once('scripts/languages.php');
-<<<<<<< HEAD
 require_once('scripts/themeSwitch.php');
-=======
-require_once('scripts/componentesthemeSwitch.php');
->>>>>>> 2c4936339460c6f03552671f9caa2bb43d305234
 
 ?>
 
