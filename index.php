@@ -49,9 +49,8 @@ if ($_SESSION["remainingAttempts"] <= 0) {
 </head>
 
 <body>
-<body>
   <?php require_once('components/nav1.php') ?>   
-    <section id="mainText">
+    <section>
         <h2>Login</h2>
         <form action="index.php" method="post">
             <input type="text" id="loginPass" name="loginPass" placeholder="<?php echo $text_index['usuario'] ?>">
