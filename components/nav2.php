@@ -1,5 +1,5 @@
 <nav id="nav2">
-    <div id="logo"><button><img src="./img/logo.png"></img></button></div>
+    <div id="logo"><a href="mainContent.php"><button><img src="./img/logo.png"></img></button></a></div>
     <div id="mainBtns">
         <button><a href="mainContent.php">
                 <?php echo $text_main['inicio'] ?>

@@ -6,11 +6,6 @@
 }
 
 body {
-  font-family: 'AlexBrush', 'Segoe Script', 'Brush Script MT', cursive, sans-serif;
-}
-
-body {
-    background-color: antiquewhite;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -43,7 +38,8 @@ button a {
     display: block;
     display: flex;
     justify-content: center;     
-    align-items: center;   
+    align-items: center;
+    max-height: 4em;
 }
 
 button:hover {
@@ -186,6 +182,7 @@ button:hover, #mainText h2:hover {
 
 #mainText h2:hover {
     cursor: pointer;
+    color: #1e3229;
     background-color: #C1CDC8;
 }
 

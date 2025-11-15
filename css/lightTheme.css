@@ -1,3 +1,9 @@
 body {
     background-color: antiquewhite;
+    color: #1e3229;
+}
+
+#mainText h2:hover {
+    color: #EEEEEF;
+    background-color: #55557F;
 }
