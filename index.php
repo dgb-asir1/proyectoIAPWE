@@ -44,7 +44,7 @@ if ($_SESSION["remainingAttempts"] <= 0) {
 
 <head>
     <title>SIDRACOLA</title>
-    <link rel="stylesheet" href="css/base.css>">   
+    <link rel="stylesheet" href="css/base.css">   
     <link rel="stylesheet" href="css/<?php echo $cssFile ?>">
 </head>
 

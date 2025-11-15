@@ -85,7 +85,7 @@ if (!empty($_POST['pregunta10'])) {
 
 <head>
     <title>SIDRACOLA</title>
-    <link rel="stylesheet" href="css/base.css>">       
+    <link rel="stylesheet" href="css/base.css">       
     <link rel="stylesheet" href="css/<?php echo $cssFile ?>">
 </head>
 

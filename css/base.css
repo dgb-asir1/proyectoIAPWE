@@ -9,7 +9,6 @@ body {
   font-family: 'AlexBrush', 'Segoe Script', 'Brush Script MT', cursive, sans-serif;
 }
 
-
 body {
     background-color: antiquewhite;
     text-align: center;
@@ -32,6 +31,8 @@ button {
     font-weight: bold;
     border-radius: 0.2em;    
 }
+
+
 
 button:hover {
     color: #FFFEFD;
