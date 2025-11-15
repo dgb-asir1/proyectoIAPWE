@@ -19,7 +19,6 @@
         <form action="" method="POST">
             <input type="hidden" name="logout">
             <?php echo (!empty($_SESSION['user_logged'])) ? "<button id='logoutBtn' type='submit'>Logout</button>" : "" ?>
-            <button id="logoutBtn" type="submit">Logout</button>
         </form>       
     </div>
 </nav>
