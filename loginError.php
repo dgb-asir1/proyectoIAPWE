@@ -6,6 +6,9 @@ echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
 $_SESSION['loginAttemptsReset'] = true;
 echo "<script>console.log('Reseteados los intentos de login');</script>";
 
+require_once('scripts/languages.php');
+require_once('scripts/componentesthemeSwitch.php');
+
 ?>
 
 <!DOCTYPE html>
