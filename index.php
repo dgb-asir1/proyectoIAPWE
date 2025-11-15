@@ -24,7 +24,7 @@ if (isset($_SESSION['loginAttemptsReset']) && $_SESSION['loginAttemptsReset'] ==
     unset($_SESSION['loginAttemptsReset']);
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if (isset($_POST['loginPass'])) {
     $loginPass = $_POST['loginPass'];
     if ($loginPass == "labubu") {
         $_SESSION['user_logged'] = true;
