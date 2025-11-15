@@ -46,12 +46,33 @@ if ($_SESSION["remainingAttempts"] <= 0) {
 </head>
 
 <body>
+<body>
+    <nav id="nav1">
+        <div id="languageBtns">
+            <form action="" method="get">
+                <input type="hidden" name="lang" value="ESP">
+                <button id="langBtnEs" type="submit"><img src="./img/flag_Spain.png"></button>
+            </form>
+
+            <form action="" method="get">
+                <input type="hidden" name="lang" value="ENG">
+                <button id="langBtnEng" type="submit"><img src="./img/flag_USA.png"></button>
+            </form>
+
+            <form action="" method="get">
+                <input type="hidden" name="lang" value="FRA">
+                <button id="langBtnFr" type="submit"><img src="./img/flag_France.png"></button>
+            </form>
+        </div>
+
+        </div>
+    </nav>    
     <section id="mainText">
         <h2>Login</h2>
         <form action="index.php" method="post">
-            <label for="loginPass">Introduce la contraseña</label>
+            <input type="text" id="loginPass" name="loginPass" placeholder="Usuario">
             <br><br>
-            <!--password--><input type="text" id="loginPass" name="loginPass">
+            <input type="text" id="loginPass" name="loginPass" placeholder="Contraseña">
             <br><br>
             <button type="submit" value="Submit">Entrar</button>
             <br><br>
