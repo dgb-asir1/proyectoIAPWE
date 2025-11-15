@@ -13,15 +13,12 @@ else {
     echo "<script>console.log('Idioma de sesión = ".$_SESSION['lang']."')</script>";
 }
 
-if (isset($_GET['lang'])) {
-    echo "<script>console.log('Cambiando idioma.')</script>";    
+if (isset($_GET['lang'])) {  
     $_SESSION['lang'] = $_GET['lang'];
-    echo "<script>console.log('Idioma de sesión = ".$_SESSION['lang']."')</script>";
-} else {
-    $_SESSION['lang'] = 'ESP';
+    echo "<script>console.log('Idioma de sesión cambiado a ".$_SESSION['lang']."')</script>";
 }
 
-if ($_SESSION['lang'] == "ESP") {
+if ($_SESSION['lang'] == "ESP") {  
     $text_index = $text_index_spanish;
     $text_main = $text_main_spanish;
     $text_quiz = $text_quiz_spanish;
