@@ -79,6 +79,15 @@ if (!empty($_POST['pregunta10'])) {
     }
 }
 
+
+
+if (isset($_POST['cuestionarioCompleto'])) {
+    echo "<script>console.log('Cuestionario completado');</script>";
+}
+else {
+    echo "<script>console.log('Cuestionario no completado');</script>";    
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -205,6 +214,7 @@ if (!empty($_POST['pregunta10'])) {
             </fieldset>
 
             <br>
+            <input type="hidden" name="cuestionarioCompleto">
             <button type="submit">Corregir</button>
 
         </form>
@@ -212,7 +222,7 @@ if (!empty($_POST['pregunta10'])) {
     <section>
         <p>
             <?php
-            if ($nota !== 0) {
+            if (isset($_POST['cuestionarioCompleto'])) {
                 echo "Has sacado una nota de $nota";
             }
             ?>
