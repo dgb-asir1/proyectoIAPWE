@@ -4,8 +4,8 @@ session_start();
 $filename = str_replace('\\', '/', __FILE__);
 echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
 
-require_once('languages.php');
-require_once('themeSwitch.php');
+require_once('scripts/languages.php');
+require_once('scripts/themeSwitch.php');
 
 ?>
 
