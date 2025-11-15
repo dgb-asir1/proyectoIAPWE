@@ -5,7 +5,11 @@ $filename = str_replace('\\', '/', __FILE__);
 echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
 
 require_once('scripts/languages.php');
+<<<<<<< HEAD
 require_once('scripts/themeSwitch.php');
+=======
+require_once('scripts/componentesthemeSwitch.php');
+>>>>>>> 2c4936339460c6f03552671f9caa2bb43d305234
 
 ?>
 
