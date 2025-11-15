@@ -204,6 +204,7 @@ if (!empty($_POST['pregunta10'])) {
                 <label for="pregunta10_resp_c"><?php echo $text_quiz['pregunta10_resp_c'] ?></label><br>
             </fieldset>
 
+            <br>
             <button type="submit">Corregir</button>
 
         </form>
