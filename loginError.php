@@ -13,6 +13,7 @@ echo "<script>console.log('Reseteados los intentos de login');</script>";
 
 <head>
     <title>SIDRACOLA</title>
+    <link rel="stylesheet" href="css/base.css>">       
     <link rel="stylesheet" href="css/lightTheme.css">
 </head>
 

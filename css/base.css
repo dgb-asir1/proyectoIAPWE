@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'AlexBrush';
+  src: url('../fonts/AlexBrush-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'AlexBrush', 'Segoe Script', 'Brush Script MT', cursive, sans-serif;
+}
+
+
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-family: 'AlexBrush', Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    justify-content: right; 
+    align-items: center; 
+}
+
+button {
+    background-color: #6F9384;
+    color: #FAEBD7;
+    font-weight: bold;
+    border-radius: 0.2em;    
+}
+
+button:hover {
+    color: #FFFEFD;
+}
+
+#nav1 {
+    padding-right: 3em;
+}
+
+#nav2 {
+    justify-content: center; 
+}
+
+#languageBtns {
+    width: 20em;
+    display: flex;
+    justify-content: center;
+    gap: 0.7em;
+}
+
+#languageBtns button {
+    justify-content: center; 
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+#languageBtns button:hover {
+    border: 2px solid #6F9384;
+}
+
+#languageBtns img {
+    max-width: 2em;
+    max-height: 2em;
+    display: block;
+}
+
+#logoutBtn{
+    margin-left: 2em;
+}
+
+#logoutBtn button{
+    padding: 0.5em
+}
+
+#logo {
+    max-width: 25%;
+    min-width: 25%;;    
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#logo button {
+    background-color: transparent;
+    border: 3px solid transparent;
+    padding: 0em;
+}
+
+#logo button:hover {
+    border: 3px solid #6F9384;
+}
+
+#logo img {
+    max-height: 6em;
+    width: 100%;
+    height: auto;     
+    display: block;
+    border-radius: 0.2em;
+}
+
+#mainBtns {
+    min-height: 6em;    
+    max-width: 50%;
+    min-width: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#mainBtns > button{
+    width: 14em;
+    height: 3em;
+    font-size: large;
+}
+
+#themeBtn { 
+    max-width: 25%;
+    min-width: 25%;
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#themeBtn button {
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}
+
+button:hover, #mainText h2:hover {
+    box-shadow: 5px 4px 4px -2px rgba(0,0,0,0.72);
+    -webkit-box-shadow: 5px 4px 4px -2px rgba(0,0,0,0.72);
+    -moz-box-shadow: 5px 4px 4px -2px rgba(0,0,0,0.72);
+}
+
+#themeBtn img {
+    max-height: 2em;   
+}
+
+#mainImg img {
+    border-radius: 1em;
+}
+
+#mainText {
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: flex-start; 
+}
+
+#mainText summary{
+    text-align: center;
+}
+
+#mainText h2{
+    font-size: 2.4em;
+    min-width: 8em;
+    max-width: 14em;
+    border-radius: 2em;
+    padding: 0.2em;
+    display: block;
+}
+
+#mainText h2:hover {
+    cursor: pointer;
+    background-color: #C1CDC8;
+}
+
+#mainText h2:hover, button {
+    cursor: pointer;
+}
+
+details summary {
+  list-style: none;
+}
+
+details p {
+    display: block;
+    max-width: 30em;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#formContainer{
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: flex-start;     
+}
+
+form {
+    text-align: center;
+}
+
+fieldset {
+    max-width: 42em;
+    display: block;
+    text-align: left;
+}
