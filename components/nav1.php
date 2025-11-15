@@ -15,6 +15,4 @@
             <button id="langBtnFr" type="submit"><img src="./img/flag_France.png"></button>
         </form>
     </div>
-
-    </div>
 </nav>

@@ -11,13 +11,9 @@
     <div id="themeBtn">
         <form action="" method="get">
             <input type="hidden" name="theme" value=<?php
-                                                    if (isset($_GET['theme'])) {
-                                                        $_SESSION["theme"] == 'LIGHT' ? $themeBtnValue = "DARK" : $themeBtnValue = "LIGHT";
-                                                    } else {
-                                                        $themeBtnValue = "DARK";
-                                                    }
-                                                    echo $themeBtnValue;
-                                                    ?>>
+                $_SESSION["theme"] == 'LIGHT' ? $themeBtnValue = "DARK" : $themeBtnValue = "LIGHT";
+                echo $themeBtnValue;
+                ?>>
             <button type="submit"><img src="./img/themeSwitch.png"></img></button>
         </form>
     </div>
