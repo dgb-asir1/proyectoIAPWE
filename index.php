@@ -1,13 +1,16 @@
 <?php
 
+session_start();
+$filename = str_replace('\\', '/', __FILE__);
+echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
+
+require_once('languages.php');
+
 $urlMain = "mainContent.php";
 $urlError = "loginError.php";
 $loginPass = "";
 $maxAttempts = 3;
 
-session_start();
-$filename = str_replace('\\', '/', __FILE__);
-echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
 
 if (!isset($_SESSION["remainingAttempts"])) {
     echo "<script>console.log('Nuevo usuario: estableciendo intentos al máximo');</script>";
@@ -70,9 +73,9 @@ if ($_SESSION["remainingAttempts"] <= 0) {
     <section id="mainText">
         <h2>Login</h2>
         <form action="index.php" method="post">
-            <input type="text" id="loginPass" name="loginPass" placeholder="Usuario">
+            <input type="text" id="loginPass" name="loginPass" placeholder="<?php echo $text_index['usuario'] ?>">
             <br><br>
-            <input type="password" id="loginPass" name="loginPass" placeholder="Contraseña">
+            <input type="password" id="loginPass" name="loginPass" placeholder="<?php echo $text_index['contraseña'] ?>">
             <br><br>
             <button type="submit" value="Submit">Entrar</button>
             <br><br>

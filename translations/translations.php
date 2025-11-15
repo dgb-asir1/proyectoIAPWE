@@ -2,6 +2,8 @@
 
 #spanish
 $text_index_spanish = [
+    "usuario" => "Usuario",
+    "contraseña" => "Contraseña",
     "iniciar_sesion" => "Iniciar sesión",
     "usuario_pass_incorr" => "Usuario y/o contraseña incorrectos",
     "intentos_restantes" => "Intentos restantes:"
@@ -25,6 +27,8 @@ $text_quiz_spanish = [];
 
 #english
 $text_index_english = [
+    "usuario" => "User", 
+    "contraseña" => "Password",  
     "iniciar_sesion" => "Log in",
     "usuario_pass_incorr" => "Incorrect username and/or password",
     "intentos_restantes" => "Remaining attempts:"
@@ -48,6 +52,8 @@ $text_quiz_english = [];
 
 #french
 $text_index_french = [
+    "usuario" => "Utilisateur", 
+    "contraseña" => "Mot de passe",
     "iniciar_sesion" => "Se connecter",
     "usuario_pass_incorr" => "Nom d'utilisateur et/ou mot de passe incorrects",
     "intentos_restantes" => "Tentatives restantes :"
