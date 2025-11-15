@@ -8,13 +8,25 @@ $filename = str_replace('\\', '/', __FILE__);
 echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
 
 
+if (isset($_GET['theme'])) {
+    if ($_GET['theme'] == "LIGHT") {
+        $cssFile = "lightTheme.css";
+    } else {
+        $cssFile = "darkTheme.css";
+    }
+} else {
+    $cssFile = "lightTheme.css";
+}
+
+
+
 ?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>SIDRACOLA</title>
-    <link rel="stylesheet" href="css/allStyles.css">
+    <link rel="stylesheet" href="css/<?php echo $cssFile ?>">
 </head>
 
 <body>
@@ -38,7 +50,7 @@ echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
 
         </div>
     </nav>
-    <nav>
+    <nav id="nav2">
         <div id="logo"><button><img src="./img/logo.png"></img></button></div>
         <div id="mainBtns">
             <button><a href="index.php">
@@ -49,7 +61,13 @@ echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
                 </a></button>
         </div>
         <div id="themeBtn">
-            <button><img src="./img/themeSwitch.png"></img></button>
+            <form action="" method="get">
+                <input type="hidden" name="theme" value=
+                    <?php $_GET['theme'] == 'LIGHT' ? $themeBtnValue = "DARK" : $themeBtnValue = "LIGHT";
+                    echo $themeBtnValue
+                    ?>>
+                <button type="submit"><img src="./img/themeSwitch.png"></img></button>
+            </form>
         </div>
     </nav>
     <section id="mainImg">

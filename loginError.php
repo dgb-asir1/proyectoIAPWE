@@ -13,7 +13,7 @@ echo "<script>console.log('Reseteados los intentos de login');</script>";
 
 <head>
     <title>SIDRACOLA</title>
-    <link rel="stylesheet" href="css/allStyles.css">
+    <link rel="stylesheet" href="css/lightTheme.css">
 </head>
 
 <body>
@@ -37,14 +37,20 @@ echo "<script>console.log('Reseteados los intentos de login');</script>";
 
         </div>
     </nav>
-    <nav>
+    <nav id="nav2">
         <div id="logo"><button><img src="./img/logo.png"></img></button></div>
         <div id="mainBtns">
-            <button>INICIO</button>
-            <button><a href="cuestionario.php">CUESTIONARIO</a></button>
+            <button><a href="index.php">
+                    <?php echo $text_main['inicio'] ?>
+                </a></button>
+            <button><a href="cuestionario.php">
+                    <?php echo $text_main['cuestionario'] ?>
+                </a></button>
         </div>
         <div id="themeBtn">
-            <button><img src="./img/themeSwitch.png"></img></button>
+            <form action="" method="get">
+                <button type="submit"><<img src="./img/themeSwitch.png"></img></button>
+            </form>
         </div>
     </nav>
     <section>

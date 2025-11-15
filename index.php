@@ -42,13 +42,10 @@ if ($_SESSION["remainingAttempts"] <= 0) {
 
 <head>
     <title>Sidra-Cola</title>
-    <link rel="stylesheet" href="css/allStyles.css">
+    <link rel="stylesheet" href="css/lightTheme.css">
 </head>
 
 <body>
-    <section id="mainImg">
-        <img></img>
-    </section>
     <section id="mainText">
         <h2>Login</h2>
         <form action="index.php" method="post">
