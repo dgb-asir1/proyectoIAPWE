@@ -8,6 +8,7 @@ echo "<script>console.log('Reseteados los intentos de login');</script>";
 
 require_once('scripts/languages.php');
 require_once('scripts/themeSwitch.php');
+require_once('scripts/logout.php');
 
 ?>
 

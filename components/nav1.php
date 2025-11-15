@@ -15,4 +15,10 @@
             <button id="langBtnFr" type="submit"><img src="./img/flag_France.png"></button>
         </form>
     </div>
+    <div>
+        <form action="" method="POST">
+            <input type="hidden" name="logout">
+            <button id="logoutBtn" type="submit">Logout</button>
+        </form>       
+    </div>
 </nav>

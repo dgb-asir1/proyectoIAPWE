@@ -6,6 +6,7 @@ echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
 
 require_once('scripts/languages.php');
 require_once('scripts/themeSwitch.php');
+require_once('scripts/logout.php');
 
 $urlMain = "mainContent.php";
 $urlError = "loginError.php";
