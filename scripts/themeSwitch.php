@@ -1,5 +1,8 @@
 <?php
 
+$filename = str_replace('\\', '/', __FILE__);
+echo "<script>console.log('Cargado " . $filename . "');</script>";
+
 if(empty($_SESSION["theme"])){
     echo "<script>console.log('No hay tema en sesión, activando tema por defecto (CLARO)'</script>";
     $_SESSION["theme"] = "LIGHT";

@@ -1,22 +1,35 @@
 <?php
 
+$filename = str_replace('\\', '/', __FILE__);
+echo "<script>console.log('Cargado " . $filename . "');</script>";
+
 require_once('translations/translations.php');
 
-if (isset($_GET['lang'])) {
-    $language = $_GET['lang'];
-} else {
-    $language = 'ESP';
+if(empty($_SESSION["lang"])){
+    echo "<script>console.log('No hay idioma en sesión, activando idioma por defecto (ESPAÑOL)'</script>";
+    $_SESSION['lang'] = 'ESP';
+}
+else {
+    echo "<script>console.log('Idioma de sesión = ".$_SESSION['lang']."')</script>";
 }
 
-if ($language == "ESP") {
+if (isset($_GET['lang'])) {
+    echo "<script>console.log('Cambiando idioma.')</script>";    
+    $_SESSION['lang'] = $_GET['lang'];
+    echo "<script>console.log('Idioma de sesión = ".$_SESSION['lang']."')</script>";
+} else {
+    $_SESSION['lang'] = 'ESP';
+}
+
+if ($_SESSION['lang'] == "ESP") {
     $text_index = $text_index_spanish;
     $text_main = $text_main_spanish;
     $text_quiz = $text_quiz_spanish;
-} elseif ($language == "ENG") {
+} elseif ($_SESSION['lang'] == "ENG") {
     $text_index = $text_index_english;
     $text_main = $text_main_english;
     $text_quiz = $text_quiz_english;
-} elseif ($language == "FRA") {
+} elseif ($_SESSION['lang'] == "FRA") {
     $text_index = $text_index_french;
     $text_main = $text_main_french;
     $text_quiz = $text_quiz_french;
