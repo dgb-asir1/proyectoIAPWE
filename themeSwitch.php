@@ -1,14 +1,19 @@
-<?php 
+<?php
+
+if(empty($_SESSION["theme"])){
+    $_SESSION["theme"] == "LIGHT";
+}
 
 if (isset($_GET['theme'])) {
     if ($_GET['theme'] == "LIGHT") {
-        $cssFile = "lightTheme.css";
+        $_SESSION["theme"] = "LIGHT";
     } else {
-        $cssFile = "darkTheme.css";
+        $_SESSION["theme"] = "DARK";
     }
-} else {
-    echo "<script>console.log('Activando tema por defecto');</script>";    
-    $cssFile = "lightTheme.css";
 }
 
-?>
+if ($_SESSION["theme"] == "LIGHT") {
+    $cssFile = "lightTheme.css";
+} else if ($_SESSION["theme"] == "DARK") {
+    $cssFile = "darkTheme.css";
+}
