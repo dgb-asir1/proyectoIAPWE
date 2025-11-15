@@ -27,6 +27,7 @@ if (isset($_SESSION['loginAttemptsReset']) && $_SESSION['loginAttemptsReset'] ==
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $loginPass = $_POST['loginPass'];
     if ($loginPass == "labubu") {
+        $_SESSION['user_logged'] = true;
         header('Location: ' . $urlMain);
         die();
     } else {
@@ -54,7 +55,7 @@ if ($_SESSION["remainingAttempts"] <= 0) {
     <section>
         <h2>Login</h2>
         <form action="index.php" method="post">
-            <input type="text" id="loginPass" name="loginPass" placeholder="<?php echo $text_index['usuario'] ?>">
+            <input type="text" id="loginUser" name="loginPass" placeholder="<?php echo $text_index['usuario'] ?>">
             <br><br>
             <input type="password" id="loginPass" name="loginPass" placeholder="<?php echo $text_index['contraseña'] ?>">
             <br><br>
