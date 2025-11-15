@@ -28,6 +28,7 @@ if (isset($_GET['theme'])) {
 <head>
     <title>SIDRACOLA</title>
     <link rel="stylesheet" href="css/<?php echo $cssFile ?>">
+    <link rel="stylesheet" href="css/<?php echo $cssFile ?>">
 </head>
 
 <body>
@@ -51,6 +52,7 @@ if (isset($_GET['theme'])) {
 
         </div>
     </nav>
+    <nav id="nav2">
     <nav id="nav2">
         <div id="logo"><button><img src="./img/logo.png"></img></button></div>
         <div id="mainBtns">
