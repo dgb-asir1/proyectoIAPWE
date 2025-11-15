@@ -7,11 +7,9 @@ $urlIndex = "index.php";
 
 if (isset($_POST['logout'])){
     echo "<script>console.log('Botón de logout presionado');</script>";    
-    session_abort();
+    session_destroy();
     header('Location: ' . $urlIndex);
     die();
-}else {
-    echo "<script>console.log('Botón de logout no presionado');</script>"; 
 }
 
 

@@ -6,7 +6,7 @@ echo "<script>console.log('Cargado " . $filename . "');</script>";
 require_once('translations/translations.php');
 
 if(empty($_SESSION["lang"])){
-    echo "<script>console.log('No hay idioma en sesión, activando idioma por defecto (ESPAÑOL)'</script>";
+    echo "<script>console.log('No hay idioma en sesión, activando idioma por defecto Español')</script>";
     $_SESSION['lang'] = 'ESP';
 }
 else {
