@@ -5,25 +5,15 @@ $filename = str_replace('\\', '/', __FILE__);
 echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
 
 require_once('languages.php');
-
-if (isset($_GET['theme'])) {
-    if ($_GET['theme'] == "LIGHT") {
-        $cssFile = "lightTheme.css";
-    } else {
-        $cssFile = "darkTheme.css";
-    }
-} else {
-    echo "<script>console.log('Activando tema por defecto');</script>";    
-    $cssFile = "lightTheme.css";
-}
+require_once('themeSwitch.php');
 
 ?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>SIDRACOLA</title>
-    <link rel="stylesheet" href="css/<?php echo $cssFile ?>">
     <link rel="stylesheet" href="css/<?php echo $cssFile ?>">
 </head>
 

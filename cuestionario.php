@@ -5,6 +5,7 @@ $filename = str_replace('\\', '/', __FILE__);
 echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
 
 require_once('languages.php');
+require_once('themeSwitch.php');
 
 $nota = 0;
 
@@ -78,15 +79,13 @@ if (!empty($_POST['pregunta10'])) {
     }
 }
 
-
-
 ?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Sidra-Cola</title>
-    <link rel="stylesheet" href="css/lightTheme.css">
+    <title>SIDRACOLA</title>
+    <link rel="stylesheet" href="css/<?php echo $cssFile ?>">
 </head>
 
 <body>

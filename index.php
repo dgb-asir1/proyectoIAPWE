@@ -5,12 +5,12 @@ $filename = str_replace('\\', '/', __FILE__);
 echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
 
 require_once('languages.php');
+require_once('themeSwitch.php');
 
 $urlMain = "mainContent.php";
 $urlError = "loginError.php";
 $loginPass = "";
 $maxAttempts = 3;
-
 
 if (!isset($_SESSION["remainingAttempts"])) {
     echo "<script>console.log('Nuevo usuario: estableciendo intentos al máximo');</script>";
@@ -37,15 +37,14 @@ if ($_SESSION["remainingAttempts"] <= 0) {
     header('Location: ' . $urlError);
 }
 
-
 ?>
 
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Sidra-Cola</title>
-    <link rel="stylesheet" href="css/lightTheme.css">
+    <title>SIDRACOLA</title>
+    <link rel="stylesheet" href="css/<?php echo $cssFile ?>">
 </head>
 
 <body>
