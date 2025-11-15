@@ -1,12 +1,10 @@
 <?php
 
 session_start();
-require_once('languages.php');
-
-
 $filename = str_replace('\\', '/', __FILE__);
 echo "<script>console.log('Sesión iniciada en " . $filename . "');</script>";
 
+require_once('languages.php');
 
 if (isset($_GET['theme'])) {
     if ($_GET['theme'] == "LIGHT") {
@@ -18,8 +16,6 @@ if (isset($_GET['theme'])) {
     echo "<script>console.log('Activando tema por defecto');</script>";    
     $cssFile = "lightTheme.css";
 }
-
-
 
 ?>
 <!DOCTYPE html>
@@ -55,7 +51,7 @@ if (isset($_GET['theme'])) {
     <nav id="nav2">
         <div id="logo"><button><img src="./img/logo.png"></img></button></div>
         <div id="mainBtns">
-            <button><a href="index.php">
+            <button><a href="mainContent.php">
                     <?php echo $text_main['inicio'] ?>
                 </a></button>
             <button><a href="cuestionario.php">
@@ -77,7 +73,7 @@ if (isset($_GET['theme'])) {
                 <button type="submit"><img src="./img/themeSwitch.png"></img></button>
             </form>
         </div>
-    </nav>
+    </nav>    
     <section id="mainImg">
         <img src="img/sidracola.jpg"></img>
     </section>

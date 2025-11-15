@@ -40,7 +40,7 @@ echo "<script>console.log('Reseteados los intentos de login');</script>";
     <nav id="nav2">
         <div id="logo"><button><img src="./img/logo.png"></img></button></div>
         <div id="mainBtns">
-            <button><a href="index.php">
+            <button><a href="mainContent.php">
                     <?php echo $text_main['inicio'] ?>
                 </a></button>
             <button><a href="cuestionario.php">
@@ -49,10 +49,20 @@ echo "<script>console.log('Reseteados los intentos de login');</script>";
         </div>
         <div id="themeBtn">
             <form action="" method="get">
-                <button type="submit"><<img src="./img/themeSwitch.png"></img></button>
+                <input type="hidden" name="theme" value=
+                    <?php 
+                    if(isset($_GET['theme'])){
+                        $_GET['theme'] == 'LIGHT' ? $themeBtnValue = "DARK" : $themeBtnValue = "LIGHT";   
+                    }
+                    else {
+                        $themeBtnValue = "DARK";
+                    }
+                    echo $themeBtnValue;
+                    ?>>
+                <button type="submit"><img src="./img/themeSwitch.png"></img></button>
             </form>
         </div>
-    </nav>
+    </nav>    
     <section>
         <h3>Error</h3>
         <p>Ha excedido el número máximo permitido de intentos de sesión</p>
