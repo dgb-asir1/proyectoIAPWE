@@ -63,12 +63,10 @@ if ($_SESSION["remainingAttempts"] <= 0) {
             <br><br>
             <p></p>
         </form>
-        <?php
-        if ($_SESSION["remainingAttempts"] < 3) {
-            echo "<p>Usuario y/o contraseña incorrectos</p>";
-            echo "<p>Quedan " . $_SESSION["remainingAttempts"] . " intentos";
-        }
-        ?>
+        <?php if ($_SESSION["remainingAttempts"] < 3): ?>
+            <p>Usuario y/o contraseña incorrectos</p>
+            <p>Quedan <?php echo $_SESSION["remainingAttempts"] ?> intentos</p>
+        <?php endif; ?>
     </section>
 </body>
 
