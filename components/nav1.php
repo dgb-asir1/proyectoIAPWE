@@ -1,7 +1,7 @@
 <nav id="nav1">
     <div id=userName>
     <?php if(isset($_SESSION['user_logged']) && $_SESSION['user_logged'] == true) :?>
-        <p> <?php echo $_SESSION['userName'] .", eres ".$_SESSION['userSex'] ."."; ?> </p>
+        <p> <?php echo $_SESSION['userName'] .", ".$_SESSION['userSex'] ."."; ?> </p>
     <?php endif ?>        
     </div>
     <div id="languageBtns">
