@@ -1,4 +1,9 @@
 <nav id="nav1">
+    <div id=userName>
+    <?php if(isset($_SESSION['user_logged']) && $_SESSION['user_logged'] == true) :?>
+        <p> <?php echo $_SESSION['userName'] .", eres ".$_SESSION['userSex'] ."."; ?> </p>
+    <?php endif ?>        
+    </div>
     <div id="languageBtns">
         <form action="" method="get">
             <input type="hidden" name="lang" value="ESP">

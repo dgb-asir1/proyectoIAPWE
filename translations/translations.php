@@ -3,6 +3,7 @@
 #spanish
 $text_index_spanish = [
     "usuario" => "Usuario",
+    "sexo" => "Sexo",
     "contraseña" => "Contraseña",
     "iniciar_sesion" => "Iniciar sesión",
     "usuario_pass_incorr" => "Usuario y/o contraseña incorrectos",
@@ -83,6 +84,7 @@ $text_quiz_spanish = [
 #english
 $text_index_english = [
     "usuario" => "User",
+    "sexo" => "Sex",    
     "contraseña" => "Password",
     "iniciar_sesion" => "Log in",
     "usuario_pass_incorr" => "Incorrect username and/or password",
@@ -163,6 +165,7 @@ $text_quiz_english = [
 #french
 $text_index_french = [
     "usuario" => "Utilisateur",
+    "sexo" => "Sexe",    
     "contraseña" => "Mot de passe",
     "iniciar_sesion" => "Se connecter",
     "usuario_pass_incorr" => "Nom d'utilisateur et/ou mot de passe incorrects",

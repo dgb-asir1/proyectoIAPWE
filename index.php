@@ -24,6 +24,17 @@ if (isset($_SESSION['loginAttemptsReset']) && $_SESSION['loginAttemptsReset'] ==
     unset($_SESSION['loginAttemptsReset']);
 }
 
+if (isset($_POST['loginUser'])) {
+        $_SESSION['userName'] = $_POST['loginUser'];
+}
+
+if (isset($_POST['userSex'])) {
+        $_SESSION['userSex'] = $_POST['userSex'];
+}
+else {
+    $_SESSION['userSex'] = "Alguien";
+}
+
 if (isset($_POST['loginPass'])) {
     $loginPass = $_POST['loginPass'];
     if ($loginPass == "labubu") {
@@ -55,8 +66,10 @@ if ($_SESSION["remainingAttempts"] <= 0) {
     <section>
         <h2>Login</h2>
         <form action="index.php" method="post">
-            <input type="text" id="loginUser" name="loginPass" placeholder="<?php echo $text_index['usuario'] ?>">
+            <input type="text" id="loginUser" name="loginUser" placeholder="<?php echo $text_index['usuario'] ?>">
             <br><br>
+            <input type="text" id="userSex" name="userSex" placeholder="<?php echo $text_index['sexo'] ?>">
+            <br><br>            
             <input type="password" id="loginPass" name="loginPass" placeholder="<?php echo $text_index['contraseña'] ?>">
             <br><br>
             <button type="submit" value="Submit">Entrar</button>
