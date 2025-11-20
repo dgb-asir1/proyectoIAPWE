@@ -30,6 +30,10 @@ if ($_SESSION['lang'] == "ESP") {
     $text_index = $text_index_french;
     $text_main = $text_main_french;
     $text_quiz = $text_quiz_french;
+} elseif ($_SESSION['lang'] == "RUS") {
+    $text_index = $text_index_russian;
+    $text_main = $text_main_russian;
+    $text_quiz = $text_quiz_russian;
 }
 
 ?>

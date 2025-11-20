@@ -244,3 +244,84 @@ $text_quiz_french = [
     "pregunta10_resp_b" => "PUAGH",
     "pregunta10_resp_c" => "GET",
 ];
+
+#russian
+$text_index_russian = [
+    "usuario" => "Пользователь",
+    "sexo" => "Пол",    
+    "contraseña" => "Пароль",
+    "iniciar_sesion" => "Войти",
+    "usuario_pass_incorr" => "Неверное имя пользователя и/или пароль",
+    "intentos_restantes" => "Оставшиеся попытки",
+    "entrar" => "Войти"
+];
+
+$text_main_russian = [
+    "salir" => "Выйти",
+    "inicio" => "Главная",
+    "cuestionario" => "Опрос",
+    "info" => "Информация",
+    "nosotros" => "О нас",
+    "nosotros_contenido" => "Хави и Марта — два молодых предпринимателя с дипломами в области химии и управления бизнесом. Их страсть к инновациям и устойчивости привела их к созданию Sidracola — уникального натурального напитка.",
+    "nuestro_producto" => "Наш продукт",
+    "nuestro_producto_contenido" => "Sidracola сочетает в себе освежающий вкус колы с мягкостью сидра, создавая уникальный и 100% натуральный опыт. Это результат многих лет исследований и процесса производства, ориентированного на качество.",
+    "ven_a_vernos" => "Приходите к нам",
+    "ven_a_vernos_contenido" => "Приходите к нам в Луге-де-Лланера, где мы тщательно изготавливаем каждую бутылку Sidracola. Мы приглашаем вас узнать больше о процессе создания нашего инновационного напитка.",
+];
+
+$text_quiz_russian = [
+    "títuloCuestionario" => "Сколько вы знаете о PHP?",
+    "pregunta" => "Вопрос",
+    "corregir" => "Исправить",
+    "textoNota" => "Вы набрали баллов",
+
+    "pregunta1" => "Какой протокол PHP передает данные в браузер открыто?",
+    "pregunta1_resp_a" => "POST",
+    "pregunta1_resp_b" => "GET",
+    "pregunta1_resp_c" => "PANG",
+
+    "pregunta2" => "Какая функция PHP используется для включения другого файла PHP?",
+    "pregunta2_resp_a" => "include",
+    "pregunta2_resp_b" => "insert-file",
+    "pregunta2_resp_c" => "import_contents()",
+
+    "pregunta3" => "Как мы можем присвоить переменной значение по ссылке?",
+    "pregunta3_resp_a" => "По разнице",
+    "pregunta3_resp_b" => "По ссылке",
+    "pregunta3_resp_c" => "По картезианскому указателю",
+
+    "pregunta4" => "Как мы объявляем функцию в PHP?",
+    "pregunta4_resp_a" => "script()",
+    "pregunta4_resp_b" => "declare-function",
+    "pregunta4_resp_c" => "function имяФункции()",
+
+    "pregunta5" => "Как вернуть значение из функции?",
+    "pregunta5_resp_a" => "return",
+    "pregunta5_resp_b" => "total_sum",
+    "pregunta5_resp_c" => "give-value-back",
+
+    "pregunta6" => "Как передать параметр по ссылке?",
+    "pregunta6_resp_a" => '$параметр(ref)',
+    "pregunta6_resp_b" => "start_param->new_param",
+    "pregunta6_resp_c" => '&$параметр',
+
+    "pregunta7" => "Как называется функция, которая позволяет получить значение глобальной переменной в PHP?",
+    "pregunta7_resp_a" => "global",
+    "pregunta7_resp_b" => '$_GLOBALS',
+    "pregunta7_resp_c" => 'worldVar',
+
+    "pregunta8" => "В чем разница между include и require?",
+    "pregunta8_resp_a" => "С include выполнение останавливается, если файл не существует или вызывает ошибку",
+    "pregunta8_resp_b" => "С require выполнение останавливается, если файл не существует или вызывает ошибку",
+    "pregunta8_resp_c" => "Они делают одно и то же",
+
+    "pregunta9" => "Сколько раз команда include_once загружает файл?",
+    "pregunta9_resp_a" => "1",
+    "pregunta9_resp_b" => "Бесконечно, каждый раз, когда она используется",
+    "pregunta9_resp_c" => "11",
+
+    "pregunta10" => "Какие типы запросов могут быть добавлены как избранные ссылки?",
+    "pregunta10_resp_a" => "POST",
+    "pregunta10_resp_b" => "PUAGH",
+    "pregunta10_resp_c" => "GET",
+];
