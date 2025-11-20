@@ -72,13 +72,13 @@ if ($_SESSION["remainingAttempts"] <= 0) {
             <br><br>            
             <input type="password" id="loginPass" name="loginPass" placeholder="<?php echo $text_index['contraseña'] ?>">
             <br><br>
-            <button type="submit" value="Submit">Entrar</button>
+            <button type="submit" value="Submit"><?php echo $text_index["entrar"] ?></button>
             <br><br>
             <p></p>
         </form>
         <?php if ($_SESSION["remainingAttempts"] < 3): ?>
-            <p>Usuario y/o contraseña incorrectos</p>
-            <p>Quedan <?php echo $_SESSION["remainingAttempts"] ?> intentos</p>
+            <p><?php echo $text_index["usuario_pass_incorr"] ?></p>
+            <p><?php echo $text_index["intentos_restantes"]. ": " . $_SESSION["remainingAttempts"] ?></p>
         <?php endif; ?>
     </section>
 </body>

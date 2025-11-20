@@ -7,7 +7,8 @@ $text_index_spanish = [
     "contraseña" => "Contraseña",
     "iniciar_sesion" => "Iniciar sesión",
     "usuario_pass_incorr" => "Usuario y/o contraseña incorrectos",
-    "intentos_restantes" => "Intentos restantes:"
+    "intentos_restantes" => "Intentos restantes",
+    "entrar" => "Entrar"
 ];
 
 $text_main_spanish = [
@@ -88,7 +89,8 @@ $text_index_english = [
     "contraseña" => "Password",
     "iniciar_sesion" => "Log in",
     "usuario_pass_incorr" => "Incorrect username and/or password",
-    "intentos_restantes" => "Remaining attempts:"
+    "intentos_restantes" => "Remaining attempts",
+    "entrar" => "Enter"
 ];
 
 $text_main_english = [
@@ -169,7 +171,8 @@ $text_index_french = [
     "contraseña" => "Mot de passe",
     "iniciar_sesion" => "Se connecter",
     "usuario_pass_incorr" => "Nom d'utilisateur et/ou mot de passe incorrects",
-    "intentos_restantes" => "Tentatives restantes :"
+    "intentos_restantes" => "Tentatives restantes",
+    "entrar" => "Entrer"
 ];
 
 $text_main_french = [
